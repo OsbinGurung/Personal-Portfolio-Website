@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blogs</title>
+	<link rel="stylesheet" type="text/css" href="D:\20049190_Osbin_Gurung\css\stylesheet.css">
+	<meta charset="UTF-8" name="blogs page" content="understanding of how internet technology has affected our daily lives">
+	<style type="text/css">
+		a{
+			color: black;
+			text-decoration: none;
+			text-align: center;
+
+		}
+		/* Hover effect of navbar that changes color */
+		.effect:hover{
+			
+			background-color: #cee4d6;
+			width: 5%;
+			height: 10px;
+		}
+		 /*Hover effect of navbar that changes color of links in the navbar */
+		.effect:hover a{
+				color: black;
+		}
+		/* Bottom margin for row class */
+		.row{
+			margin-bottom: 50px;
+		}
+		/* Slider CSS  */	
+		.slider {
+      		width: 90%;
+      		height: 500px;
+      		box-sizing: border-box;
+     		overflow: hidden;
+      		box-shadow: 5px 5px 10px grey;
+    	}
+    	/* width and height of an image in  #img  */
+    	#img img{
+      		width: 100%; 
+   			height: 500px;
+   		}
+   		/* blogs class CSS  */
+		.blogs{
+			background-color: #1f2833;
+			margin-top: 50px;
+			text-align: center;
+			color: #c5c6c7;
+		}
+		/* CSS for the blogs_title class  */
+		.blogs_title{
+			margin-top: 50px;
+			text-align: center;
+			font-size: 50px;
+		}
+
+	</style>
+</head>
+<body style="background-color: #72a2a0;;">
+	<!-- Container for navbar -->
+	<div class="navbar">
+		<nav>
+			<!-- Table for navbar -->
+			<table style="width: 100%; height: 50px; ">
+				<tr>
+					<!-- Navbar navigation pages as table data inside table tag-->
+					<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+						<a href="home.html" target="_blank">Home</a>
+					</td>
+					<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+						<a href="CV.html" target="_blank">CV</a>
+					</td>
+					<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+						<a href="Blogs.html" target="_blank">Blogs</a>
+					</td>
+					<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+						<a href="research.html" target="_blank">Research</a>
+					</td>
+					<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+						<a href="contact us.html" target="_blank">Contact Us</a>
+					</td>
+				</tr>
+			</table>
+		</nav>
+	</div>
+		<!-- Table of contents -->
+		<div class="row">
+			<div class="table_of_contents" style="background-color: #1f2833;">
+				<table>
+					<!-- Table data and rows -->
+					<tr>
+						<td class="table_rows" style="color: #c5c6c7;"><h1>Table of contents</h1> <hr></td>
+					</tr>
+					<tr>
+						<td class="table_rows"><a href="#positive_impact" style="color: #c5c6c7;"><h3>Positive Impact</h3></a></td>
+						<hr>
+					</tr>
+					<tr>
+						<td class="table_rows"><a href="#blog1" style="color: #c5c6c7;">How technology has affected us <br>in our daily lives.</a><hr></td>
+						<hr>
+					</tr>
+					<tr>
+						<td class="table_rows"><a href="#blog2" style="color: #c5c6c7;">Technology has changed <br>how we communicate</a><hr></td>
+						<hr>
+					</tr>
+					<tr>
+						<td class="table_rows"><a href="#blog3" style="color: #c5c6c7;">Technology has changed <br>how we pay bills and transfer money</a><hr>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_rows"><a href="#blog4" style="color: #c5c6c7;">Technology has changed <br>how we watch tv</a><hr></td>
+					</tr>
+					<tr>
+						<td class="table_rows"><a href="#blog5" style="color: #c5c6c7;">Technology has changed <br>how we stay save</a><hr></td>
+					</tr>
+					<tr>
+						<td class="table_rows"><h3>Negative Impact</h3><hr></td>
+						<hr>
+					</tr>
+					<tr>
+						<td class="table_rows"><a href="#blog6" style="color: #c5c6c7;">Technology has affected <br>our sleeping habits</a><hr></td>
+					</tr>
+					<tr>
+						<td class="table_rows"><a href="#blog7" style="color: #c5c6c7;">Cyber bullying and Cyber crimes <br>has increased</a><hr></td>
+					</tr>
+					<tr>
+						<td class="table_rows"><a href="#blog8" style="color: #c5c6c7;">Explicit content are more <br> easily available to the children</a><hr></td>
+					</tr>
+					<tr>
+						<td class="table_rows"><a href="#blog9" style="color: #c5c6c7;">Children's are addicted to <br> playing online games</a><hr></td>
+					</tr>
+					<tr>
+						<td class="table_rows"><a href="#blog10" style="color: #c5c6c7;"><h3>Overall Verdict</h3></a></td>
+						<hr>
+					</tr>
+				</table>
+			</div>
+			<!-- Slider  -->
+			<div class="blog_contents">
+				<div class="slider">
+    			<div id="img">
+      				<img src="img/a.jpg" style="width: 100%; height: 500px;">
+      				<div class="caption">welcome to MyPortfolio</div>
+    			</div>
+			</div>
+			<!-- script for Slider  -->
+  			<script>
+
+    			var images = ["img/a.jpg", "img/b.jpg", "img/c.jpg", "img/d.jpg"]; var
+x = 0; var imgs = document.getElementById('img'); setInterval(slider, 3000);
+function slider() { if (x < images.length) { x = x + 1; } else { x = 1; }
+imgs.innerHTML = "<img src=" + images[x - 1] + ">"; } </script> <div
+class="blogs"> <div id="blog1" ><br> <h1>How Internet technology has affected
+us in our daily lives.</h1> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/main_title.jpg" width="500px"
+height="250px;" style="padding: 20px;"> <p>Internet technology has changed how
+we live our lives now compared to the lifestyles of 20 years ago. We now are
+dependent upon internet technologies where most works are done with the help
+of internet technology. Internet technology has improved alot over the last
+decade and now Internet technologies like smartphones, laptops, computers,
+tablets,etc are available. Internet technology are now easy to get and is
+available to the general public. Internet technology is small and compact
+which makes it easier to travel with where you can fit a smartphone with
+capabilities of a computer inside your pockets. These changes has brought
+positives and negatives impact on our daily lives and society. Some of the
+changes brought by internet technology are written below.</p> </div> </div>
+<div class="blogs_title"> <div id="positive_impact"> <p><u>Positive
+Impact</u></p> </div>		 </div> <div class="blogs"> <div id="blog2">
+<h1>Internet technology has changed how we communicate</h1><br> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/video_call.jpg" width="200px"
+height="150px;" style="padding: 20px;"> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/phone-call.jpeg" width="200px"
+height="150px;" style="padding: 20px;"> <p>Internet technologies has changed
+our ways of communication alot. Internet technology like Email, smartphones,
+video chat, messaging apps, etc are some of the most used forms of internet
+communication used today. Since internet has been easily available to
+everyone, communication through the internet is possible. Messaging apps like
+Viber, Messenger, Whatsapp, Telegram has made communication much more easier
+as people can text each other through the internet via the messaging app.
+Mails are used for delivering large objects or items only and the use of mails
+for sending messages to others has been decreasing so much that people doesnot
+use mails to send messages alot. With the help of internet technology, a
+person is able to communicatio with another person living very far away with
+just a stable internet connection.Through the internet you can video call a
+person, send a text, email a person, watch online videos, conduct online
+classes, etc. This all is possible with the internet as it is more cost
+efficient that other means of communication. So in a sense, internet
+technology has redefined how we communication with eadch other. </p> </div>
+</div> <div class="blogs"> <div id="blog3"> <h1>Technology has changed how we
+pay bills and transfer money</h1><br> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/Send-Money-Online.png"
+width="200px" height="150px;"  style="padding: 20px;"> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/pay_bills.png" width="200px"
+height="150px;" style="padding: 20px;"> <p>Another aspect of our life that
+internet technology has changed is how we pay bills and transfer money. Before
+we used to pay our bills by going directly to the office and pay it and go to
+the bank to transfer money to someone else but now we can do it over the
+internet and has some benefits from it too. Using technologies like a
+smartphone, laptop or computer we can pay our bills and transfer money from
+our home with the help of an internet. This benefits us alot as we do not have
+to wait in line to pay our water bills or electricity bills as these could be
+paid online with the help of the internet from our home. The same also goes
+for transferring money as we can just do it online. Not only do we not have to
+stay in a line but we can also get confirmation that we have paid our bills or
+the other person has received the money we had just transferred and this is
+can be known after paying our bills or after sending money. </p> </div> </div>
+<div class="blogs"> <div id="blog4"> <h1>Technology has changed how we watch
+tv</h1><br> <img src="D:\20049190_Osbin_Gurung\img\blogs_img/youtube.jpg"
+width="200px" height="150px;" style="padding: 20px;"> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/netflix.jpg" width="200px"
+height="150px;" style="padding: 20px;"> <p>The way we watch tv has also
+changed compared to how it was before. Before we used to watch television
+through a dedicated cable to watch but now with the internet we most probably
+do not require such cables dedicated for television only. Now with the
+advancement of the television, tv's now can connect to the internet and could
+be used to surf the internet too. With such feature, watching videos from
+Youtube is possible and even Netflix with the internet. Nowadays even tv
+remote even come with a Youtube and Netflix button. The way we used to watch
+tv has changed drastically to the point that some people only watch TV's for
+Youtube and Netflix only. </p> </div> </div> <div class="blogs"> <div
+id="blog5"> <h1>Technology has changed how we stay save</h1><br> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/security_camera.jpg" width="200px"
+height="150px;"  style="padding: 20px;"> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/motion_sensor.jpg" width="200px"
+height="150px;"  style="padding: 20px;"> <p>Before we used to keep security
+guards and dogs in our house to portect ourselves from intruders in our home.
+But with the advancement of Internet technology has made it possible to stay
+save inside and outside our homes. We have security camera, motion sensor
+cameras, gps in our phones, alarms to alert us and many more ways to keep
+ourself save. Even if we are outside, our phones and smart watches has a
+emergency function if we are  in any danger, they could contact people in our
+emergency contact alerting them our location and even condtion. Some smart
+watches has feature that monitors our heartbeat and if our heatbeat is below
+the normal range and is decreasing then the smart watch alerts any emergency
+contact of ours. Internet technology has helped us to stay save anywhere we
+are. </p> </div> </div> <div class="blogs_title"> <div id="negative_impact">
+<p><u>Negative Impact</u></p> </div> </div> <div class="blogs"> <div
+id="blog6"> <h1>Technology has affected our sleeping habits</h1><br> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/watchingphone_late_night.jpg"
+width="400px" height="250px;"  style="padding: 20px;"> <p>Many of us tend to
+stay up late at night texting friends or scrolling through social media. Since
+there are many entertainment contente online we tend to watch them once we get
+hooked to it. Many people tend to stay up late at night to watch a movie or
+series or even to play games online with their friends. Such habits has
+affected our sleeping habits. Lack of sleep or bad sleepipng habits can cause
+irritability, impulsive behaviour, anxiety, depression, weakens immunity
+system which harms both our physical and mental health. Technology has caused
+such problems to be seen in our society.</p> </div> </div> <div class="blogs">
+<div id="blog7"> <h1>Cyber bullying and Cyber crimes has increased</h1><br>
+<img src="D:\20049190_Osbin_Gurung\img\blogs_img/cyberbullying.jpg"
+width="300px" height="200px;"  style="padding: 20px;"> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/cyber_crimes.webp" width="300px"
+height="200px;"  style="padding: 20px;"> <p>The rise in Cyber bullying and
+Cyber crimes has increased in number since the increase in used of internet
+technology. Cyber bullying has increased alot as it is a form of bullying
+others online without having your identity known. This has caused an increase
+in suicide by mostly teenagers as a result of cyber bullying. Cyber crimes has
+also risen in number too. Cyber crimes like scams, fishing, hacking, identity
+theft, stealing personal or important information, online fraud and many more
+has increased. Due to this many people are a victim to this unkowningly. Most
+people lose personal infromation, money and even devices are attacked making
+them inoperatable. Internet technology has given a new form of bullying and
+crimes. </p> </div> </div> <div class="blogs"> <div id="blog8"> <h1>Explicit
+content are more easily available to the children</h1><br> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/explicit_content.png"
+width="300px" height="200px;"  style="padding: 20px;"> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/violent_content.jpg" width="300px"
+height="200px;"  style="padding: 20px;"> <p>Many parents are concerned for
+their children as explicit contents and violence are easily accessible on the
+internet. Even when using parental controls on the devices that a children
+use, they are exposed to explicit and violent content in one point or the
+other. This can cause the childrens thinking capabilities to become more
+negative and cause change in behaviour causing aggression and lack of empathy.
+Such things happen as they are exposed to the explicit and violent content
+online making them lack of enpathy towards others.</p> </div> </div> <div
+class="blogs"> <div id="blog9"> <h1>Children's are addicted to playing online
+games</h1><br> <img
+src="D:\20049190_Osbin_Gurung\img\blogs_img/Video_Game_Addiction.jpg"
+width="400px" height="250px;"  style="padding: 20px;"> <p>Online games are
+easily accessible and many children get addicted to them. Mostly due to their
+friends influence a child starts playing games but if the child starts to get
+addicted towards them it will cause some problems for the child. The child
+would not fully develop social skills, get aggressive towards others and will
+only want to play games instead of doing their works. This has caused alot of
+changes in a child personality in which they become addicted to the internet
+and does not do any work or go outside to play. The children gets less
+exercise and does not have good social skills. Internet has caused childrens
+to be addicted to games and their devices.</p> </div> </div> <div
+class="blogs"> <div id="blog10"> <h1>Overall Verdict</h1><br> <p>In
+conclusion, internet and it's technology has brought alot of changes in our
+daily lives. Some good and some bad but overall we can say that internet
+technology has brought alot of positive changes around and has in some ways
+helped us in our lives. The positive effect of internet technologies outweighs
+the negative impacts but the negative impacts are still available. Some rules
+or restriction can be used to minimise the negative impacts of internet on our
+daily lives. We can only minimise the negative effects of internet technology
+by being aware, limiting the use of internet and to use the internet safely
+and securely.  </p> </div> </div> </div>	 </div>
+	
+
+			<!-- footer of the page  -->
+	<div class="row" style="width: 100%; height: 100px; margin: 0px; padding: 0px;font-size: 15px;">
+		<div class="footer_Content" align="center">
+			<p>&copy;This was done by Osbin Gurung.<br>
+				Submitted to : Mr. Hrishav Tandukar<br>
+				Assignment to make portfolio page<br>	
+			</p>
+		</div>
+		<div class="social_media" align="center">
+			<a href="contact us.html" target="_blank" style="color:#c5c6c7;">Contact Us</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="D:\20049190_Osbin_Gurung\css\stylesheet.css">
+	<meta charset="UTF-8" name="contact us page" content="form to send feedback">
+	<script src="D:\20049190_Osbin_Gurung\javascript\javascript.js"></script>
+	<style type="text/css">
+			
+			/*   Hover effect of navbar that changes color */
+			.effect:hover{
+				
+				background-color: #cee4d6;
+				width: 5%;
+				height: 10px;
+			}
+			/* Hover effect of anchor tag in navbar that changes color of links in the navbar */	
+			.effect:hover a{
+				color: black;
+			}
+			/* Hover effect of social media and email */
+			.detail_hover:hover{
+				background-color: #85cdca;
+			}
+			/* CSS for contact_us text */
+			.contact_us{
+				width: 70%;
+				height: 200px;
+				background-color: #1f2833;
+				color: #c5c6c7;
+			}
+	</style>
+</head>
+<body style="background-color: #72a2a0;;">
+	<!-- Container for navbar -->
+	<div class="navbar">
+		<nav>
+			<!-- Table for navbar -->
+			<table style="width: 100%; height: 60px; ">
+				<tr>
+					<!-- Navbar navigation pages as table data inside table tag-->
+					<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+						<a href="home.html" target="_blank">Home</a>
+					</td>
+					<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+						<a href="CV.html" target="_blank">CV</a>
+					</td>
+					<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+						<a href="Blogs.html" target="_blank">Blogs</a>
+					</td>
+					<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+						<a href="research.html" target="_blank">Research</a>
+					</td>
+					<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+						<a href="contact us.html" target="_blank">Contact Us</a>
+					</td>	
+				</tr>
+			</table>
+		</nav>
+	</div>
+	
+	<!-- contact us introduction  -->
+	<div class="row">
+		<div class="introduction" style="margin-top: 60px;">
+			<div class="contact_us">
+				<h1 style="text-align: center;">Contact us</h1>
+				<p style="text-align: center; padding-left:0px; font-size: 18px; "> This page is for contacting us. In this page, if there are any errors or technical problems you can reach out to us with this page. If there is any queries or feedback you want to give then please fill up the form below. We would be happy to receive any sort of feedback. Please feel free to give any sort of feedback to us. We will email you back regarding your queries and feedback to your mail after a few days of receiving the feedback. Every feedback or queries will be read and replied to within 3-5 business days.
+				</p>
+			</div>
+		</div>	
+	</div>
+	<!-- form for feeback  -->
+		<div class="row">
+			<div class="form_validation" style="background-color: #1f2833;color: #c5c6c7;margin-left: 240px;padding-right: 386px;">
+				<div class="feedback">
+					<form name="feedback" onsubmit="validateFeedback()" style="font-size: 25px;">
+						<p>First name: <input type="text" name="firstName" style="font-size: 15px;"></p><br>
+						<p>Last name: <input type="text" name="lastName" style="font-size: 15px;"></p><br>
+						<p>Email: <input type="text" name="email" style="font-size: 15px;"></p><br>
+						<p>Gender: <input type="radio" name="gender" value="male" checked> Male 
+						<input type="radio" name="gender" value="female"> Female 
+						<input type="radio" name="gender" value="male" checked>Not specify</p><br>
+						<p>Feedback: <br><textarea name="message" placeholder="Enter Message" style="width: 100%; height: 200px;">
+							</textarea>
+						</p><br>
+						<p><input type="submit" value="Send" style="font-size: 20px;"></p><br>
+					</form>
+				</div>
+			</div>	
+	</div>
+	<hr>
+	<!-- other means of contact details  -->
+	<div class="contact_details" style="margin-left: 240px; margin-right: 315px; ">
+			<div class="email">
+				<table>
+					<tr class="detail_hover">
+						<td>
+							<a href=""><img width="50px" height="50px" src="D:\20049190_Osbin_Gurung\img\email.png"></a>
+						</td>
+						<td>
+							<p>: osbingrg@outlook.com</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!-- follow me on social media  -->
+			<div class="follow_me" >
+				<div class="detail_hover" style="width: 50%;">
+					<h1 style="width: 50%; text-align: center; font-size: 20px;">Follow me</h1>
+					<table>
+						<tr class="detail_hover">
+							<td>
+								<img src="D:\20049190_Osbin_Gurung\img\twitter.png" width="50px" height="50px">
+							</td>
+							<td>
+								<img src="D:\20049190_Osbin_Gurung\img\instagram.png" width="50px" height="50px">
+							</td>
+							<td>
+								<img src="D:\20049190_Osbin_Gurung\img\email.png" width="50px" height="50px">
+							</td>
+						</tr>
+					</table>
+				</div>	
+			</div>
+	</div>
+		
+		<!-- footer of the page  -->	
+	<footer>
+		<div class="row" style="width: 100%; height: 100px; margin: 0px; padding: 0px; font-size: 15px;">
+			<div class="footer_Content" align="center">
+				<p>&copy;This was done by Osbin Gurung.<br>
+					Submitted to : Mr. Hrishav Tandukar<br>
+					Assignment to make portfolio page<br>	
+				</p>
+			</div>
+			<div class="social_media" align="center">
+				<a href="contact us.html" target="_blank" style="color:#c5c6c7;">Contact Us</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

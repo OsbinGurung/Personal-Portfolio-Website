@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>home Page</title>
+		<link rel="stylesheet" type="text/css" href="D:\20049190_Osbin_Gurung\css\stylesheet.css">
+		<meta charset="UTF-8" name="home page" content="description of all pages">
+		<style type="text/css">
+			a{
+				color: black;
+			}
+			/* Hover effect of navbar that changes color */
+			.effect:hover{	
+				background-color: #cee4d6;
+				width: 5%;
+				height: 10px;
+				
+			}
+			/* Hover effect of navbar that changes color of links in the navbar */
+			.effect:hover a{
+				color: black;
+			}
+			/* CSS for the description of other pages */
+			.description{	
+				padding:20px 20px 0px 20px;
+				width: 100%;
+				height: 500px;
+				border-width: 2px;
+				border-style: solid;
+				border-color: #85cdca;
+				background-color: #1f2833;
+				color: #c5c6c7;
+			}
+			/* CSS for changing color of links inside description class */
+			.description a{
+				color: #c5c6c7;
+			}
+			/* Bottom margin for row class */
+			.row{
+				margin-bottom: 50px;
+			}
+			/* Slider CSS  */			
+			.slider {
+      			width: 90%;
+      			height: 500px;
+      			margin: 20px auto;
+      			box-sizing: border-box;
+     			overflow: hidden;
+      			box-shadow: 5px 5px 10px grey;
+    		}
+    		/* width and height of an image in  #id  */
+    		#img img{
+      			width: 100%; 
+      			height: 500px;
+    		}
+    		/* CSS for the extra text for toggling */
+			#more_text{
+				display: none;
+				background-color: #45a29e	;
+				color: #c5c6c7;
+				box-shadow: 5px 5px 5px grey;
+				
+			}
+			/* CSS for the paragraph tag in more_text ID */
+			#more_text p{
+				padding: 20px;
+			}
+
+
+
+		</style>
+			
+	</head>
+	<body style="background-color: #72a2a0;">
+		<!-- Container for navbar -->
+			<div class="navbar">
+				<nav>
+					<!-- Table for navbar -->
+					<table style="width: 100%; height: 50px; ">
+						<tr>
+							<!-- Navbar navigation pages as table data inside table tag-->
+							<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+								<a href="home.html" target="_blank">Home</a>
+							</td>
+							<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+								<a href="CV.html" target="_blank">CV</a>
+							</td>
+							<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+								<a href="Blogs.html" target="_blank">Blogs</a>
+							</td>
+							<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+								<a href="research.html" target="_blank">Research</a>
+							</td>
+							<td class="effect" style="width: 8%;height: 50px; text-align: center;">
+								<a href="contact us.html" target="_blank">Contact Us</a>
+							</td>
+						</tr>
+					</table>
+				</nav>
+			</div>
+			<!-- Slider  -->
+			<div class="slider">
+    			<div id="img">
+      				<img src="img/a.jpg" style="width: 100%; height: 500px;">
+    			</div>
+			</div>
+			<!-- script for Slider  -->
+  			<script>
+
+    			var images = ["img/a.jpg", "img/b.jpg", "img/c.jpg", "img/d.jpg"];
+    			var x = 0;
+    			var imgs = document.getElementById('img');
+    			setInterval(slider, 3000);
+    			function slider() {
+      				if (x < images.length) {
+       					x = x + 1;
+      				} else {
+        				x = 1;
+      				}
+      				imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+				}
+			</script>
+			<br>
+			<!-- Description about the home page  -->
+			<div class = "row">
+				<div class="content">
+					<div class="myportfolio" style="background-color: #1f2833;color: #c5c6c7; height: 500px; ">
+						<h1 >About my portfolio</h1><br>
+						<p >This page is the main page of the project. This page consists of a brief discription of each other page in the project. MyPortfolio is the name of the project. This is MyPortfolio's home page. This page consists of a navigation bar, image slider, description of this page and a brief discription of the other pages.
+							<!-- span for inline toggling of text  -->
+						<span id="dots">......</span></p><br>
+							<!-- span for the extra text used during toggling  -->
+						<span id="more_text">
+							<h3>CV page</h3>
+							<p>CV page consist of the details about me and my expeience.</p><br>
+							<h3>Blogs page</h3>
+							<p>Blogs page consist of the positives and negatives of how Internet has affected us.</p><br>
+							<h3>Research page</h3>
+							<p>Research page consist of the different websites from where I used some of its features.</p><br>
+							<h3>Contact Us page</h3>
+							<p>Contact Us page consist of the a form to send feeback. </p><br>
+						</span>
+							<!-- button for toggling text  -->
+						<button onclick="read_more()" id="butntext">Read more</button>
+					</div>	
+				</div>
+			</div>
+			<!-- Script for the text toggling  -->
+			<script type="text/javascript">
+				function read_more(){
+					var more = document.getElementById("more_text");
+					var butn = document.getElementById("butntext");
+					var dot = document.getElementById("dots");
+					if (more.style.display === "none") {
+						dot.style.display = "none";
+					    more.style.display = "block";
+					    butn.innerHTML = "Read less";
+
+					  } else {
+					  	dot.style.display = "inline";
+					    more.style.display = "none";
+					    butn.innerHTML = "Read more";
+					 }
+				}
+			</script>
+			<!-- brief description of CV page with image  -->
+			<div class = "row">
+				<div class="image">
+						<img src="img/a.jpg" width="500px" height="500px" align="center" style="box-shadow: 5px 5px 5px grey;">
+				</div>	
+				<div class="content">
+					<div class="description">
+						<h1>CV</h1><br>
+						<p>The CV page holds information about me. This page also has information about my qualification, study, experience, skills, interests and contact details. This page is a CV that I would use to apply for a job. </p>
+						<br>
+							<h3><a href="CV.html">Read more</a></h3>
+					</div>
+				</div>
+			</div>
+			<!-- brief description of Blogs page with image  -->
+			<div class="row">
+				<div class="image">
+						<img src="img\b.jpg" width="500px" height="500px" align="center" style="box-shadow: 5px 5px 5px grey;">
+				</div>
+				<div class="content">
+					<div class="description">
+						<h1>Blogs</h1><br>
+						<p>The blogs page contains how Internet has affected us in our daily lives. This page explains the impact of Internet on our lives. It includes both the positive and negative impact Internet technologies has made to our lives and to show both the benefits and detrimental effects Internet technilogy has brought us.</p>
+						<br>
+							<h3><a href="Blogs.html"><u>Read more</u></a></h3>
+					</div>
+				</div>
+			</div>
+			<!-- brief description of Research page with image  -->
+			<div class="row">
+				<div class="image">
+						<img src="img/d.jpg" width="500px" height="500px" align="center" style="box-shadow: 5px 5px 5px grey;">
+				</div>					
+				<div class="content">	
+					<div class="description">
+						<h1>Research</h1><br>
+						<p>The Research page consists of websites from where I took reference to some of their website styles and effects. Some styles and effects taken as a references from these websites would be the navbar hover effect, sliders, internal links, etc.</p>
+						<br>
+							<h3><a href="research.html"><u>Read more</u></a></h3>
+					</div>
+				</div>
+			</div>
+			<!-- brief description of Contact US page with image  -->
+			<div class="row">
+				<div class="image">
+						<img src="img\c.jpg" width="500px" height="500px" align="center" style="box-shadow: 5px 5px 5px grey;">
+				</div>
+				<div class="content">
+					<div class="description">
+						<h1>Contact Us</h1><br>
+						<p>The Contact Us page is where you can send feedback or queries about the website. In this page you can fill up a form and send us feedback or any queries you have with this page.</p>
+						<br>
+							<h3><a href="contact us.html"><u>Read more</u></a></h3>
+					</div>
+				</div>	
+			</div>
+			<!-- footer of the page  -->
+			<div class="row" style="width: 100%; height: 100px; margin: 0px; padding: 0px;font-size: 15px;">
+				<div class="footer_Content" align="center">
+					<p>&copy;This was done by Osbin Gurung.<br>
+							Submitted to : Mr. Hrishav Tandukar<br>
+							Assignment to make porfolio page<br>	
+					</p>
+				</div>
+				<div class="social_media" align="center">
+					<a href="contact us.html" target="_blank" style="color:#c5c6c7;"s>Contact Us</a>
+				</div>
+			</div>
+			
+
+
+	</body>
+</html>
